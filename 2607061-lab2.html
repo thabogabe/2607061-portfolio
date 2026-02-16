@@ -1,0 +1,76 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* YOUR CSS GOES HERE */
+        body{
+            font-family: Arial;
+            color:darkolivegreen;
+        }
+
+        #main-header{
+            background-color:skyblue;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1{
+            font-size: 120;
+        }
+        h2{
+            color:darkred;
+        }
+        nav ul{
+            display: flex;/* Makes items go in a row */
+            list-style: none;/* Removes bullet points */
+        }
+        .card{
+            padding: 15px;
+            border: 2px dotted yellowgreen;
+            border-radius: 10px;
+            margin: 12px 0;
+        }
+        a{
+
+            color:rebeccapurple;
+        }
+        footer{
+            background-color:darksalmon;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1>Gabriel Behane</h1>
+        <p>Student ID: 2607061</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="card" id="about">
+            <h2>About Me</h2>
+            <p>I’m a driven and analytical thinker who enjoys working at the intersection of theory and implementation. I study Computer Science at the University of the Witwatersrand, where I spend a lot of time thinking deeply about algorithms, recursion, and advanced mathematics like Riemann integration and metric spaces. I prefer writing clean, readable C++11 code and really understanding the theory behind what I build. I’m naturally curious and forward-thinking — whether I’m analyzing my chilli harvest yields, exploring billion-dollar industries, or thinking about the future of AI. I care about long-term vision, disciplined growth, and solving complex problems that actually matter.</p>
+        </section>
+
+        <article class="card" id="projects">
+            <h2>Latest Project</h2>
+            <p>I’m currently working on a mobile app in Android Studio called CampusLink. The idea is to create a simple platform for university students to share notes, past papers, and quick updates in one clean space. I’m building it with a focus on clean UI design and efficient backend logic, making sure everything feels lightweight and fast. Right now, I’m working on user authentication, a basic upload system for PDFs, and a structured feed where students can post academic resources. I’m paying close attention to how the data flows between activities and how to keep the architecture organized so it scales properly as I add features like messaging and search.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gabriel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
